@@ -1,0 +1,41 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyBefore" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D7EBF6"/>
+      <stop offset="0.55" stop-color="#E9F0F7"/>
+      <stop offset="1" stop-color="#CFC7BC"/>
+    </linearGradient>
+    <linearGradient id="floorBefore" x1="600" y1="560" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BDAE9C"/>
+      <stop offset="1" stop-color="#8E7E6A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#skyBefore)"/>
+  <rect y="560" width="1200" height="340" fill="url(#floorBefore)"/>
+  <rect x="120" y="130" width="960" height="460" rx="4" fill="#EEF2F2"/>
+  <rect x="170" y="180" width="860" height="360" fill="#DDEBEF"/>
+  <path d="M170 410H1030" stroke="#B8C4CA" stroke-width="2"/>
+  <path d="M170 300H1030" stroke="#B8C4CA" stroke-width="2"/>
+  <path d="M170 490H1030" stroke="#B8C4CA" stroke-width="2"/>
+  <path d="M170 180V540" stroke="#B8C4CA" stroke-width="2"/>
+  <path d="M1030 180V540" stroke="#B8C4CA" stroke-width="2"/>
+  <path d="M420 180V540" stroke="#7C858B" stroke-width="18"/>
+  <path d="M550 180V540" stroke="#7C858B" stroke-width="18"/>
+  <path d="M680 180V540" stroke="#7C858B" stroke-width="18"/>
+  <path d="M810 180V540" stroke="#7C858B" stroke-width="18"/>
+  <path d="M170 180H1030" stroke="#7C858B" stroke-width="18"/>
+  <path d="M170 300H1030" stroke="#7C858B" stroke-width="12"/>
+  <path d="M170 410H1030" stroke="#7C858B" stroke-width="12"/>
+  <path d="M170 540H1030" stroke="#7C858B" stroke-width="18"/>
+  <path d="M388 180V540" stroke="#5E6366" stroke-width="4" opacity="0.5"/>
+  <path d="M486 180V540" stroke="#5E6366" stroke-width="4" opacity="0.5"/>
+  <path d="M618 180V540" stroke="#5E6366" stroke-width="4" opacity="0.5"/>
+  <path d="M744 180V540" stroke="#5E6366" stroke-width="4" opacity="0.5"/>
+  <path d="M874 180V540" stroke="#5E6366" stroke-width="4" opacity="0.5"/>
+  <rect x="190" y="620" width="820" height="22" rx="11" fill="#7A6B5A"/>
+  <rect x="170" y="560" width="860" height="60" fill="#8B7E6B"/>
+  <rect x="234" y="570" width="58" height="40" fill="#A29380"/>
+  <rect x="904" y="570" width="58" height="40" fill="#A29380"/>
+  <rect x="170" y="620" width="860" height="20" fill="#766A59"/>
+  <circle cx="955" cy="410" r="94" fill="#F5D38A" opacity="0.32"/>
+</svg>

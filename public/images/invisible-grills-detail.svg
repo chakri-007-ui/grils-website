@@ -1,0 +1,39 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="detailBg" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DFF3F7"/>
+      <stop offset="0.4" stop-color="#E7EFEF"/>
+      <stop offset="1" stop-color="#CDBDAE"/>
+    </linearGradient>
+    <linearGradient id="detailGlass" x1="600" y1="170" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7F2EA"/>
+      <stop offset="1" stop-color="#D7E7E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#detailBg)"/>
+  <rect x="130" y="140" width="940" height="580" rx="8" fill="#F5F7F7"/>
+  <rect x="180" y="190" width="840" height="480" fill="url(#detailGlass)"/>
+  <path d="M180 310H1020" stroke="#C8D4D4" stroke-width="2"/>
+  <path d="M180 430H1020" stroke="#C8D4D4" stroke-width="2"/>
+  <path d="M180 550H1020" stroke="#C8D4D4" stroke-width="2"/>
+  <g stroke="#E5B15C" stroke-linecap="round">
+    <path d="M290 190V670" stroke-width="4"/>
+    <path d="M390 190V670" stroke-width="4"/>
+    <path d="M490 190V670" stroke-width="4"/>
+    <path d="M590 190V670" stroke-width="4"/>
+    <path d="M690 190V670" stroke-width="4"/>
+    <path d="M790 190V670" stroke-width="4"/>
+    <path d="M890 190V670" stroke-width="4"/>
+    <path d="M180 250H1020" stroke-width="3"/>
+    <path d="M180 370H1020" stroke-width="3"/>
+    <path d="M180 490H1020" stroke-width="3"/>
+    <path d="M180 610H1020" stroke-width="3"/>
+  </g>
+  <g stroke="#6F7D85" stroke-linecap="round" opacity="0.8">
+    <path d="M180 190H1020" stroke-width="10"/>
+    <path d="M180 670H1020" stroke-width="10"/>
+  </g>
+  <rect x="180" y="720" width="840" height="26" rx="13" fill="#8A7A6A"/>
+  <rect x="210" y="760" width="780" height="16" rx="8" fill="#726755"/>
+  <circle cx="965" cy="395" r="105" fill="#F4CF8B" opacity="0.2"/>
+</svg>

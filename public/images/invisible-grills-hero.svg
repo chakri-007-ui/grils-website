@@ -1,0 +1,40 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroBg" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DBF0F9"/>
+      <stop offset="0.45" stop-color="#D8E4E8"/>
+      <stop offset="1" stop-color="#B7A998"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="600" y1="180" x2="600" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBF8F3"/>
+      <stop offset="1" stop-color="#DDE8EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#heroBg)"/>
+  <rect x="110" y="118" width="980" height="620" rx="8" fill="#F2F5F4"/>
+  <rect x="170" y="178" width="860" height="500" fill="url(#glass)"/>
+  <path d="M170 300H1030" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M170 425H1030" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M170 550H1030" stroke="#C4D0D4" stroke-width="2"/>
+  <g stroke="#D7A658" stroke-linecap="round">
+    <path d="M260 178V678" stroke-width="4"/>
+    <path d="M350 178V678" stroke-width="4"/>
+    <path d="M440 178V678" stroke-width="4"/>
+    <path d="M530 178V678" stroke-width="4"/>
+    <path d="M620 178V678" stroke-width="4"/>
+    <path d="M710 178V678" stroke-width="4"/>
+    <path d="M800 178V678" stroke-width="4"/>
+    <path d="M890 178V678" stroke-width="4"/>
+    <path d="M170 238H1030" stroke-width="3"/>
+    <path d="M170 358H1030" stroke-width="3"/>
+    <path d="M170 478H1030" stroke-width="3"/>
+    <path d="M170 598H1030" stroke-width="3"/>
+  </g>
+  <g stroke="#72808A" stroke-linecap="round" opacity="0.85">
+    <path d="M170 178H1030" stroke-width="10"/>
+    <path d="M170 678H1030" stroke-width="10"/>
+  </g>
+  <rect x="140" y="708" width="920" height="30" rx="15" fill="#8B7A68"/>
+  <rect x="250" y="742" width="700" height="24" rx="12" fill="#6E5F50"/>
+  <circle cx="960" cy="372" r="110" fill="#F5D99E" opacity="0.22"/>
+</svg>

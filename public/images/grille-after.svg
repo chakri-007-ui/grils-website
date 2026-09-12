@@ -1,0 +1,43 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyAfter" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DFF2FF"/>
+      <stop offset="0.5" stop-color="#EAF5F7"/>
+      <stop offset="1" stop-color="#DFD7D0"/>
+    </linearGradient>
+    <linearGradient id="glassAfter" x1="600" y1="180" x2="600" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBF9F5"/>
+      <stop offset="1" stop-color="#DBE7EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#skyAfter)"/>
+  <rect y="560" width="1200" height="340" fill="#B7A995"/>
+  <rect x="130" y="130" width="940" height="470" rx="4" fill="#EEF3F5"/>
+  <rect x="180" y="180" width="840" height="360" fill="url(#glassAfter)"/>
+  <path d="M180 210H1020" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M180 330H1020" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M180 450H1020" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M180 180V540" stroke="#C4D0D4" stroke-width="2"/>
+  <path d="M1020 180V540" stroke="#C4D0D4" stroke-width="2"/>
+  <g opacity="0.9" stroke="#E7B868" stroke-linecap="round">
+    <path d="M260 180V540" stroke-width="3"/>
+    <path d="M350 180V540" stroke-width="3"/>
+    <path d="M440 180V540" stroke-width="3"/>
+    <path d="M530 180V540" stroke-width="3"/>
+    <path d="M620 180V540" stroke-width="3"/>
+    <path d="M710 180V540" stroke-width="3"/>
+    <path d="M800 180V540" stroke-width="3"/>
+    <path d="M890 180V540" stroke-width="3"/>
+    <path d="M180 210H1020" stroke-width="2.5"/>
+    <path d="M180 330H1020" stroke-width="2.5"/>
+    <path d="M180 450H1020" stroke-width="2.5"/>
+  </g>
+  <g stroke="#6F7A80" stroke-linecap="round" opacity="0.85">
+    <path d="M180 180H1020" stroke-width="8"/>
+    <path d="M180 540H1020" stroke-width="8"/>
+  </g>
+  <rect x="170" y="560" width="860" height="56" fill="#B79D7E"/>
+  <rect x="190" y="620" width="820" height="20" rx="10" fill="#7D695B"/>
+  <path d="M228 570H972" stroke="#8E8A84" stroke-width="3" opacity="0.55"/>
+  <circle cx="950" cy="392" r="98" fill="#F7D18E" opacity="0.22"/>
+</svg>
