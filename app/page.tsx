@@ -3,6 +3,16 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
+declare global {
+  interface Window {
+    gtag?: (
+      command: string,
+      action: string,
+      params?: Record<string, unknown>
+    ) => void
+  }
+}
+
 const projects = [
   {
     title: 'Balcony cable installation',
@@ -1459,7 +1469,31 @@ export default function Page() {
                 encodeURIComponent(message)
               }`
 
-            window.location.href = whatsappUrl
+            // Google Ads Contact conversion
+            // Fires after the required form fields have been submitted.
+            const navigateToWhatsApp = () => {
+              window.location.href = whatsappUrl
+            }
+
+            if (typeof window.gtag === 'function') {
+              let navigated = false
+
+              const callback = () => {
+                if (navigated) return
+                navigated = true
+                navigateToWhatsApp()
+              }
+
+              window.gtag('event', 'conversion', {
+                send_to: 'AW-18451411286/fr14COPrvgcENbiqN5E',
+                event_callback: callback,
+              })
+
+              // Fallback in case the Google tag callback does not fire.
+              window.setTimeout(callback, 1000)
+            } else {
+              navigateToWhatsApp()
+            }
           }}
         >
 
