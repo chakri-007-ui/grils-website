@@ -5,11 +5,7 @@ import { useEffect, useState } from 'react'
 
 declare global {
   interface Window {
-    gtag?: (
-      command: string,
-      action: string,
-      params?: Record<string, unknown>
-    ) => void
+    gtag?: (...args: any[]) => void
   }
 }
 
@@ -415,7 +411,6 @@ export default function Page() {
 
           <span>VIZAG · 17°41′N</span>
         </div>
-
       </section>
 
       {/* TRUST */}
@@ -1002,12 +997,10 @@ export default function Page() {
             preload="metadata"
             aria-label="Pigeon safety net installation video"
           >
-
             <source
               src="/videos/pigeon-safety-nets.mp4"
               type="video/mp4"
             />
-
           </video>
 
           <div className="pigeon-video-overlay" />
@@ -1270,7 +1263,6 @@ export default function Page() {
         <div className="steps">
 
           <div>
-
             <span>01</span>
 
             <h3>
@@ -1281,11 +1273,9 @@ export default function Page() {
               Tell us about your home, your view and what you want to
               protect.
             </p>
-
           </div>
 
           <div>
-
             <span>02</span>
 
             <h3>
@@ -1296,11 +1286,9 @@ export default function Page() {
               Our team visits, understands the space and recommends the
               right system.
             </p>
-
           </div>
 
           <div>
-
             <span>03</span>
 
             <h3>
@@ -1311,7 +1299,6 @@ export default function Page() {
               Enjoy a clean, confident installation backed by our
               10-year warranty.
             </p>
-
           </div>
 
         </div>
@@ -1469,31 +1456,33 @@ export default function Page() {
                 encodeURIComponent(message)
               }`
 
-            // Google Ads Contact conversion
-            // Fires after the required form fields have been submitted.
-            const navigateToWhatsApp = () => {
-              window.location.href = whatsappUrl
-            }
+            /*
+             * ==========================================================
+             * GOOGLE ADS CONTACT CONVERSION
+             * ==========================================================
+             *
+             * Conversion ID:
+             * 18451411286
+             *
+             * Conversion label:
+             * fr14COPprvgcENbiqN5E
+             *
+             * This fires when the user submits the quote form.
+             */
 
             if (typeof window.gtag === 'function') {
-              let navigated = false
-
-              const callback = () => {
-                if (navigated) return
-                navigated = true
-                navigateToWhatsApp()
-              }
-
               window.gtag('event', 'conversion', {
-                send_to: 'AW-18451411286/fr14COPrvgcENbiqN5E',
-                event_callback: callback,
+                send_to:
+                  'AW-18451411286/fr14COPprvgcENbiqN5E',
               })
-
-              // Fallback in case the Google tag callback does not fire.
-              window.setTimeout(callback, 1000)
-            } else {
-              navigateToWhatsApp()
             }
+
+            /*
+             * After sending the conversion event,
+             * open WhatsApp with the customer's enquiry.
+             */
+
+            window.location.href = whatsappUrl
           }}
         >
 
@@ -1624,9 +1613,12 @@ export default function Page() {
 
       </section>
 
-      {/* FOOTER */}
       {/* FLOATING SOCIAL MEDIA BUTTONS */}
-      <div className="floating-socials" aria-label="Social media links">
+      <div
+        className="floating-socials"
+        aria-label="Social media links"
+      >
+
         <a
           href="https://wa.me/917013378477"
           target="_blank"
@@ -1634,8 +1626,16 @@ export default function Page() {
           aria-label="Contact us on WhatsApp"
           className="floating-social"
         >
-          <img src="/images/home/whatsapp.png" alt="WhatsApp" />
-          <span className="floating-tooltip">WhatsApp</span>
+
+          <img
+            src="/images/home/whatsapp.png"
+            alt="WhatsApp"
+          />
+
+          <span className="floating-tooltip">
+            WhatsApp
+          </span>
+
         </a>
 
         <a
@@ -1645,8 +1645,16 @@ export default function Page() {
           aria-label="Follow us on Instagram"
           className="floating-social"
         >
-          <img src="/images/home/insta.png" alt="Instagram" />
-          <span className="floating-tooltip">Instagram</span>
+
+          <img
+            src="/images/home/insta.png"
+            alt="Instagram"
+          />
+
+          <span className="floating-tooltip">
+            Instagram
+          </span>
+
         </a>
 
         <a
@@ -1656,11 +1664,21 @@ export default function Page() {
           aria-label="Follow us on Facebook"
           className="floating-social"
         >
-          <img src="/images/home/facebook.png" alt="Facebook" />
-          <span className="floating-tooltip">Facebook</span>
+
+          <img
+            src="/images/home/facebook.png"
+            alt="Facebook"
+          />
+
+          <span className="floating-tooltip">
+            Facebook
+          </span>
+
         </a>
+
       </div>
 
+      {/* FOOTER */}
       <footer className="footer">
 
         <div className="footer-shell">
@@ -1668,21 +1686,32 @@ export default function Page() {
           <div className="footer-intro">
 
             <div className="footer-brand-block">
-              <Link className="footer-brand" href="#top">
+
+              <Link
+                className="footer-brand"
+                href="#top"
+              >
+
                 <img
                   className="brand-mark"
                   src="/images/prasad-enterprises-logo.png"
                   alt="Vizag Invisible Grills"
                 />
+
                 <span>
                   <strong>VIZAG</strong>
                   <small>INVISIBLE GRILLS</small>
                 </span>
+
               </Link>
 
-              <span className="footer-kicker">INVISIBLE PROTECTION · OPEN LIVING</span>
+              <span className="footer-kicker">
+                INVISIBLE PROTECTION · OPEN LIVING
+              </span>
 
-              <h2>Safety that stays out of sight.</h2>
+              <h2>
+                Safety that stays out of sight.
+              </h2>
 
               <p>
                 Premium invisible grills, safety nets and smart protection solutions
@@ -1700,7 +1729,10 @@ export default function Page() {
             </div>
 
             <div className="footer-contact-card">
-              <span className="footer-label">TALK TO US</span>
+
+              <span className="footer-label">
+                TALK TO US
+              </span>
 
               <a
                 className="footer-phone"
@@ -1723,6 +1755,7 @@ export default function Page() {
                 Chat on WhatsApp
                 <Arrow />
               </a>
+
             </div>
 
           </div>
@@ -1730,34 +1763,89 @@ export default function Page() {
           <div className="footer-nav-grid">
 
             <div className="footer-nav-column">
-              <span className="footer-label">EXPLORE</span>
-              <a href="#solutions">Solutions</a>
-              <a href="#why-us">Why us</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+
+              <span className="footer-label">
+                EXPLORE
+              </span>
+
+              <a href="#solutions">
+                Solutions
+              </a>
+
+              <a href="#why-us">
+                Why us
+              </a>
+
+              <a href="#projects">
+                Projects
+              </a>
+
+              <a href="#contact">
+                Contact
+              </a>
+
             </div>
 
             <div className="footer-nav-column">
-              <span className="footer-label">SERVICES</span>
-              <Link href="/invisible-grills">Invisible grills</Link>
-              <Link href="/cricket-nets">Cricket nets</Link>
-              <Link href="/cloth-hangers">Cloth hangers</Link>
-              <a href="#contact">Pigeon safety nets</a>
+
+              <span className="footer-label">
+                SERVICES
+              </span>
+
+              <Link href="/invisible-grills">
+                Invisible grills
+              </Link>
+
+              <Link href="/cricket-nets">
+                Cricket nets
+              </Link>
+
+              <Link href="/cloth-hangers">
+                Cloth hangers
+              </Link>
+
+              <a href="#contact">
+                Pigeon safety nets
+              </a>
+
             </div>
 
             <div className="footer-nav-column footer-location">
-              <span className="footer-label">LOCATION</span>
-              <strong>Visakhapatnam</strong>
-              <span>Andhra Pradesh, India</span>
-              <span>Serving homes across Vizag</span>
+
+              <span className="footer-label">
+                LOCATION
+              </span>
+
+              <strong>
+                Visakhapatnam
+              </strong>
+
+              <span>
+                Andhra Pradesh, India
+              </span>
+
+              <span>
+                Serving homes across Vizag
+              </span>
+
             </div>
 
           </div>
 
           <div className="footer-bottom">
-            <span>© 2026 Vizag Invisible Grills</span>
-            <span>30-YEAR WARRANTY · VISAKHAPATNAM</span>
-            <span>ALL RIGHTS RESERVED</span>
+
+            <span>
+              © 2026 Vizag Invisible Grills
+            </span>
+
+            <span>
+              30-YEAR WARRANTY · VISAKHAPATNAM
+            </span>
+
+            <span>
+              ALL RIGHTS RESERVED
+            </span>
+
           </div>
 
         </div>
