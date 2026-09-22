@@ -194,6 +194,26 @@ export default function Page() {
     }
   }, [selectedProject])
 
+  // Google Ads Contact conversion helper
+  const gtag_report_conversion = (url?: string) => {
+    const callback = () => {
+      if (typeof url !== 'undefined') {
+        window.location.href = url
+      }
+    }
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18451411286/fr14COPprvgcENbiqN5E',
+        event_callback: callback,
+      })
+    } else {
+      callback()
+    }
+
+    return false
+  }
+
   return (
     <main className="site">
 
@@ -1456,34 +1476,8 @@ export default function Page() {
                 encodeURIComponent(message)
               }`
 
-            /*
-             * ==========================================================
-             * GOOGLE ADS CONTACT CONVERSION
-             * ==========================================================
-             *
-             * Conversion ID:
-             * 18451411286
-             *
-             * Conversion label:
-             * fr14COPprvgcENbiqN5E
-             *
-             * This fires when the user submits the quote form.
-             */
-
-           if (typeof window.gtag === 'function') {
-  window.gtag('event', 'conversion', {
-    send_to: 'AW-18451411286/fr14COPprvgcENbiqN5E',
-    event_callback: () => {
-      window.location.href = whatsappUrl
-    },
-  })
-
-  setTimeout(() => {
-    window.location.href = whatsappUrl
-  }, 1000)
-} else {
-  window.location.href = whatsappUrl
-}
+            // Google Ads Contact conversion
+            gtag_report_conversion(whatsappUrl)
           }}
         >
 
