@@ -1470,19 +1470,20 @@ export default function Page() {
              * This fires when the user submits the quote form.
              */
 
-            if (typeof window.gtag === 'function') {
-              window.gtag('event', 'conversion', {
-                send_to:
-                  'AW-18451411286/fr14COPprvgcENbiqN5E',
-              })
-            }
+           if (typeof window.gtag === 'function') {
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-18451411286/fr14COPprvgcENbiqN5E',
+    event_callback: () => {
+      window.location.href = whatsappUrl
+    },
+  })
 
-            /*
-             * After sending the conversion event,
-             * open WhatsApp with the customer's enquiry.
-             */
-
-            window.location.href = whatsappUrl
+  setTimeout(() => {
+    window.location.href = whatsappUrl
+  }, 1000)
+} else {
+  window.location.href = whatsappUrl
+}
           }}
         >
 
