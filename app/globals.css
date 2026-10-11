@@ -3161,7 +3161,7 @@ h1 em {
 .ig-editorial-media {
   position: relative;
 
-  min-height: 470px;
+  height: 470px;
 
   display: flex;
   align-items: center;
@@ -3183,14 +3183,15 @@ h1 em {
 }
 
 .ig-editorial-media img {
+  position: absolute;
+  inset: 0;
+
   width: 100%;
   height: 100%;
 
-  padding: 40px;
-
   display: block;
 
-  object-fit: contain;
+  object-fit: cover;
 
   transition: transform 0.8s ease;
 }
@@ -4072,7 +4073,7 @@ h1 em {
   }
 
   .ig-editorial-media {
-    min-height: 380px;
+    height: 380px;
   }
 
   .ig-editorial-copy {
@@ -4254,11 +4255,7 @@ h1 em {
   }
 
   .ig-editorial-media {
-    min-height: 300px;
-  }
-
-  .ig-editorial-media img {
-    padding: 25px;
+    height: 300px;
   }
 
   .ig-editorial-copy h3 {
@@ -6010,5 +6007,231 @@ section.scroll-reveal,
   .floating-social,
   .floating-social img {
     transition: none !important;
+  }
+}
+
+.iron-grills-page .ig-editorial-media {
+  height: clamp(500px, 42vw, 620px);
+}
+
+.iron-grills-page .details-hero {
+  background-image:
+    linear-gradient(
+      105deg,
+      rgba(8, 39, 43, 0.86) 0%,
+      rgba(12, 55, 59, 0.68) 48%,
+      rgba(16, 59, 64, 0.42) 100%
+    ),
+    url('/images/IronGrills.png');
+}
+
+.iron-grills-page .details-use-grid img {
+  height: clamp(270px, 26vw, 360px);
+}
+
+.shields-page .details-hero {
+  background-image:
+    linear-gradient(
+      105deg,
+      rgba(8, 39, 43, 0.9) 0%,
+      rgba(12, 55, 59, 0.72) 48%,
+      rgba(16, 59, 64, 0.42) 100%
+    ),
+    url('/images/Sheid.png');
+  background-position: center 58%;
+}
+
+.shoe-racks-page .details-hero {
+  background-image:
+    linear-gradient(
+      105deg,
+      rgba(8, 39, 43, 0.88) 0%,
+      rgba(12, 55, 59, 0.68) 48%,
+      rgba(16, 59, 64, 0.38) 100%
+    ),
+    url('/images/Shoeracks.png');
+  background-position: center 54%;
+}
+
+@media (max-width: 1000px) {
+  .iron-grills-page .ig-editorial-media {
+    height: 420px;
+  }
+
+  .iron-grills-page .details-use-grid img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 560px) {
+  .iron-grills-page .ig-editorial-media {
+    height: 340px;
+  }
+
+  .iron-grills-page .details-use-grid img {
+    height: 280px;
+  }
+}
+
+
+/* =========================================================
+   SHIELDS SHOWCASE — BALCONY + PARKING
+========================================================= */
+
+.shields-showcase {
+  background: linear-gradient(
+    135deg,
+    #f8f5ee 0%,
+    #e8e2d6 100%
+  );
+}
+
+.shields-showcase-media {
+  min-height: 570px;
+  background: #d4d0c7;
+}
+
+.shields-showcase-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 570px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shields-media-label {
+  max-width: calc(100% - 40px);
+}
+
+.shields-media-label span {
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.shields-media-label small {
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .shields-showcase-media,
+  .shields-showcase-media img {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shields-showcase {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .shields-showcase-media,
+  .shields-showcase-media img {
+    min-height: 360px;
+  }
+
+  .shields-showcase .ig-showcase-actions {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shields-showcase-media,
+  .shields-showcase-media img {
+    min-height: 290px;
+  }
+
+  .shields-media-label {
+    left: 14px;
+    bottom: 14px;
+    max-width: calc(100% - 28px);
+    padding: 12px 14px;
+  }
+}
+
+/* =========================================================
+   SHOE RACKS SHOWCASE
+========================================================= */
+
+.shoe-racks-showcase {
+  background: linear-gradient(
+    135deg,
+    #f6f0e7 0%,
+    #e7ddcf 100%
+  );
+}
+
+.shoe-racks-showcase-media {
+  min-height: 570px;
+  background: #d7cabb;
+}
+
+.shoe-racks-showcase-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 570px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shoe-racks-media-label {
+  max-width: calc(100% - 40px);
+}
+
+.shoe-racks-media-label span {
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.shoe-racks-media-label small {
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .shoe-racks-showcase-media,
+  .shoe-racks-showcase-media img {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shoe-racks-showcase {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .shoe-racks-showcase-media,
+  .shoe-racks-showcase-media img {
+    min-height: 360px;
+  }
+
+  .shoe-racks-showcase .ig-showcase-actions {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shoe-racks-showcase-media,
+  .shoe-racks-showcase-media img {
+    min-height: 290px;
+  }
+
+  .shoe-racks-media-label {
+    left: 14px;
+    bottom: 14px;
+    max-width: calc(100% - 28px);
+    padding: 12px 14px;
   }
 }
