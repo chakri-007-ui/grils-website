@@ -194,26 +194,6 @@ export default function Page() {
     }
   }, [selectedProject])
 
-  // Google Ads Contact conversion helper
-  const gtag_report_conversion = (url?: string) => {
-    const callback = () => {
-      if (typeof url !== 'undefined') {
-        window.location.href = url
-      }
-    }
-
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-18451411286/fr14COPprvgcENbiqN5E',
-        event_callback: callback,
-      })
-    } else {
-      callback()
-    }
-
-    return false
-  }
-
   return (
     <main className="site">
 
@@ -747,6 +727,75 @@ export default function Page() {
         </div>
 
       </section>
+            {/* CLOTH HANGERS */}
+      <section className="cloth-hangers-showcase section-pad">
+
+        <div className="ig-showcase-copy cloth-showcase-copy">
+
+          <div className="section-kicker">
+            CLOTH HANGERS
+          </div>
+
+          <div className="ig-big-number">
+            01
+          </div>
+
+          <h2>
+            Organised living.
+            <br />
+            <em>With less visual noise.</em>
+          </h2>
+
+          <p>
+            Thoughtful cloth hanger systems for balconies, utility corners and
+            compact homes where smart storage matters just as much as the
+            look of the room.
+          </p>
+
+          <div className="ig-showcase-actions">
+
+            <a
+              className="button button-saffron"
+              href="#contact"
+            >
+              Plan your storage
+              <Arrow />
+            </a>
+
+            <Link
+              className="text-link"
+              href="/cloth-hangers"
+            >
+              Explore the system
+              <Arrow />
+            </Link>
+
+          </div>
+
+        </div>
+
+        <div className="ig-showcase-media cloth-showcase-media">
+
+          <img
+            src="/images/cloth-hangers/wall-mount.png"
+            alt="Cloth hanger installation in a tidy modern home"
+          />
+
+          <div className="ig-media-label">
+
+            <span>
+              Smart storage
+            </span>
+
+            <small>
+              Clean drying & hanger layouts
+            </small>
+
+          </div>
+
+        </div>
+
+      </section>
 
       {/* INVISIBLE GRILLS FEATURE */}
       <section className="invisible-grills-showcase section-pad">
@@ -758,7 +807,7 @@ export default function Page() {
           </div>
 
           <div className="ig-big-number">
-            01
+            02
           </div>
 
           <h2>
@@ -819,6 +868,172 @@ export default function Page() {
 
       </section>
 
+     
+{/* IRON GRILLS */}
+<section className="invisible-grills-showcase section-pad">
+  <div className="ig-showcase-copy">
+    <div className="section-kicker">
+      IRON GRILLS
+    </div>
+
+    <div className="ig-big-number">
+      03
+    </div>
+
+    <h2>
+      Strong protection
+      <br />
+      <em>with timeless style.</em>
+    </h2>
+
+    <p>
+      Durable iron grills designed for balconies, windows and homes.
+      Combining strength, security and elegant designs, our iron grills
+      provide reliable protection while complementing your home's
+      architecture.
+    </p>
+
+    <div className="ig-showcase-actions">
+      <a
+        className="button button-saffron"
+        href="#contact"
+      >
+        Get an iron grill quote
+        <Arrow />
+      </a>
+
+      <a
+        className="text-link"
+        href="/Iron-grills"
+      >
+        Explore our designs
+        <Arrow />
+      </a>
+    </div>
+  </div>
+
+  <div className="ig-showcase-media">
+    <img
+      src="/images/IronGrills.png"
+      alt="Iron grill installation for a modern home"
+    />
+
+    <div className="ig-media-label">
+      <span>
+        IRON
+      </span>
+
+      <small>
+        Strong & durable grill designs
+      </small>
+    </div>
+  </div>
+</section>
+
+{/* SHIELDS: BALCONY + PARKING */}
+<section className="invisible-grills-showcase shields-showcase section-pad">
+  <div className="ig-showcase-copy">
+    <div className="section-kicker">
+     Weather protection for homes and vehicles
+    </div>
+
+    <div className="ig-big-number">04</div>
+
+    <h2>
+      All-weather protection
+      <br />
+      <em>for every space.</em>
+    </h2>
+
+    <p>
+      Durable and stylish rain protection shields for balconies,
+      parking areas and outdoor spaces. Help protect your family,
+      vehicles and home from rain and harsh sun with a modern
+      design that complements your property.
+    </p>
+
+    <div className="ig-showcase-actions">
+      <a className="button button-saffron" href="#contact">
+        Get a shield quote
+        <Arrow />
+      </a>
+
+      <Link className="text-link" href="/shields">
+        Explore our designs
+        <Arrow />
+      </Link>
+    </div>
+  </div>
+
+  <div className="ig-showcase-media shields-showcase-media">
+    <img
+      src="/images/Sheid.png"
+      alt="Rain protection shields installed over a home balcony and a residential parking area"
+    />
+
+    <div className="ig-media-label shields-media-label">
+      <span>BALCONY + PARKING</span>
+      <small>
+        Weather protection for homes and vehicles
+      </small>
+    </div>
+  </div>
+</section>
+
+
+
+{/* SHOE RACKS */}
+<section className="invisible-grills-showcase shoe-racks-showcase section-pad">
+  <div className="ig-showcase-copy">
+    <div className="section-kicker">
+      SHOE RACKS
+    </div>
+
+    <div className="ig-big-number">05</div>
+
+    <h2>
+      A place for every pair.
+      <br />
+      <em>A home that feels organised.</em>
+    </h2>
+
+    <p>
+      Keep your footwear neatly organised with stylish and
+      practical shoe racks designed for modern homes. From
+      compact entryways to spacious storage areas, find a
+      solution that combines everyday convenience, durability
+      and a clean, elegant look.
+    </p>
+
+    <div className="ig-showcase-actions">
+      <a className="button button-saffron" href="#contact">
+        Get a shoe rack quote
+        <Arrow />
+      </a>
+
+      <Link className="text-link" href="/shoe-racks">
+        Explore our designs
+        <Arrow />
+      </Link>
+    </div>
+  </div>
+
+  <div className="ig-showcase-media shoe-racks-showcase-media">
+    <img
+      src="/images/Shoeracks.png"
+      alt="Modern shoe rack providing organised footwear storage in a home"
+    />
+
+    <div className="ig-media-label shoe-racks-media-label">
+      <span>SMART SHOE STORAGE</span>
+      <small>
+        Neat, practical storage for everyday living
+      </small>
+    </div>
+  </div>
+</section>
+
+
       {/* CRICKET NETS */}
       <section className="cricket-nets section-pad">
 
@@ -828,9 +1043,9 @@ export default function Page() {
             CRICKET NETS
           </div>
 
-          <span className="section-number">
-            02
-          </span>
+         <div className="ig-big-number">
+      06
+    </div>
 
           <h2>
             Safe practice.
@@ -883,75 +1098,7 @@ export default function Page() {
 
       </section>
 
-      {/* CLOTH HANGERS */}
-      <section className="cloth-hangers-showcase section-pad">
 
-        <div className="ig-showcase-copy cloth-showcase-copy">
-
-          <div className="section-kicker">
-            CLOTH HANGERS
-          </div>
-
-          <div className="ig-big-number">
-            03
-          </div>
-
-          <h2>
-            Organised living.
-            <br />
-            <em>With less visual noise.</em>
-          </h2>
-
-          <p>
-            Thoughtful cloth hanger systems for balconies, utility corners and
-            compact homes where smart storage matters just as much as the
-            look of the room.
-          </p>
-
-          <div className="ig-showcase-actions">
-
-            <a
-              className="button button-saffron"
-              href="#contact"
-            >
-              Plan your storage
-              <Arrow />
-            </a>
-
-            <Link
-              className="text-link"
-              href="/cloth-hangers"
-            >
-              Explore the system
-              <Arrow />
-            </Link>
-
-          </div>
-
-        </div>
-
-        <div className="ig-showcase-media cloth-showcase-media">
-
-          <img
-            src="/images/cloth-hangers/wall-mount.png"
-            alt="Cloth hanger installation in a tidy modern home"
-          />
-
-          <div className="ig-media-label">
-
-            <span>
-              Smart storage
-            </span>
-
-            <small>
-              Clean drying & hanger layouts
-            </small>
-
-          </div>
-
-        </div>
-
-      </section>
 
       {/* PIGEON NETS */}
       <section className="pigeon-safety section-pad">
@@ -962,10 +1109,7 @@ export default function Page() {
             PIGEON SAFETY NETS
           </div>
 
-          <span className="section-number">
-            04
-          </span>
-
+    
           <h2>
             Keep balconies
             <br />
@@ -1476,8 +1620,34 @@ export default function Page() {
                 encodeURIComponent(message)
               }`
 
-            // Google Ads Contact conversion
-            gtag_report_conversion(whatsappUrl)
+            /*
+             * ==========================================================
+             * GOOGLE ADS CONTACT CONVERSION
+             * ==========================================================
+             *
+             * Conversion ID:
+             * 18451411286
+             *
+             * Conversion label:
+             * fr14COPprvgcENbiqN5E
+             *
+             * This fires when the user submits the quote form.
+             */
+
+           if (typeof window.gtag === 'function') {
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-18451411286/fr14COPprvgcENbiqN5E',
+    event_callback: () => {
+      window.location.href = whatsappUrl
+    },
+  })
+
+  setTimeout(() => {
+    window.location.href = whatsappUrl
+  }, 1000)
+} else {
+  window.location.href = whatsappUrl
+}
           }}
         >
 
