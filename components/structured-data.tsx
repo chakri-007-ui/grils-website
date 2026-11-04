@@ -16,7 +16,7 @@ export function BusinessData() {
     telephone: site.phone,
     areaServed: { '@type': 'State', name: 'Andhra Pradesh', containedInPlace: { '@type': 'Country', name: 'India' } },
     contactPoint: { '@type': 'ContactPoint', telephone: site.phone, contactType: 'customer service', areaServed: 'IN-AP' },
-    sameAs: ['https://www.instagram.com/prasadorrupula/', 'https://www.facebook.com/profile.php?id=61594490063217'],
+    sameAs: ['https://maps.app.goo.gl/AANEyzxQZG1mXv27A', 'https://www.instagram.com/prasadorrupula/', 'https://www.facebook.com/profile.php?id=61594490063217'],
   }} />
 }
 
