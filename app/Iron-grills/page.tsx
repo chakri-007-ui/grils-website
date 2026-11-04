@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata } from '@/lib/seo'
 import { ServiceData } from '@/components/structured-data'
 import { ServiceCoverage } from '@/components/service-coverage'
@@ -38,7 +39,7 @@ export default function IronGrillsPage() {
           href="/"
           aria-label="Vizag Invisible Grills home"
         >
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
@@ -134,7 +135,7 @@ export default function IronGrillsPage() {
           <div className="ig-editorial-media">
             <span className="wire-number">01</span>
 
-            <img
+            <SiteImage
               src="/images/IronGrills.png"
               alt="Modern black iron grills installed on a balcony"
             />
@@ -183,7 +184,7 @@ export default function IronGrillsPage() {
           <div className="ig-editorial-media">
             <span className="wire-number">03</span>
 
-            <img
+            <SiteImage
               src="/images/window.png"
               alt="Iron window grills fitted to a modern home"
             />
@@ -254,7 +255,7 @@ export default function IronGrillsPage() {
       {/* FEATURES */}
       <section className="feature-split section-pad scroll-reveal">
         <div className="feature-split-image">
-          <img
+          <SiteImage
             src="/images/IronGrills.png"
             alt="Black iron grill installation on a modern residential balcony"
           />
@@ -312,7 +313,7 @@ export default function IronGrillsPage() {
         <div className="details-use-grid">
           <div>
             <span>01</span>
-            <img
+            <SiteImage
               src="/images/IronGrills.png"
               alt="Iron grill installation on a balcony"
             />
@@ -325,7 +326,7 @@ export default function IronGrillsPage() {
 
           <div>
             <span>02</span>
-            <img
+            <SiteImage
               src="/images/window.png"
               alt="Iron security grills fitted to a window"
             />
@@ -338,7 +339,7 @@ export default function IronGrillsPage() {
 
           <div>
             <span>03</span>
-            <img
+            <SiteImage
               src="/images/door.jpeg"
               alt="Decorative iron grill gate at a residential entrance"
             />
@@ -383,7 +384,7 @@ export default function IronGrillsPage() {
       <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"

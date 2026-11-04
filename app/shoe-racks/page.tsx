@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata } from '@/lib/seo'
 import { ServiceData } from '@/components/structured-data'
 import { ServiceCoverage } from '@/components/service-coverage'
@@ -36,7 +37,7 @@ export default function ShoeRacksPage() {
       <ServiceData path="/shoe-racks" name="Shoe racks" />
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Vizag Invisible Grills home">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
@@ -111,7 +112,7 @@ export default function ShoeRacksPage() {
 
       <section className="feature-split section-pad scroll-reveal">
         <div className="feature-split-image">
-          <img
+          <SiteImage
             src="/images/Shoeracks.png"
             alt="Organised shoe rack in a bright, modern home entryway"
           />
@@ -155,7 +156,7 @@ export default function ShoeRacksPage() {
           {storageIdeas.map((idea) => (
             <div key={idea.number}>
               <span>{idea.number}</span>
-              <img
+              <SiteImage
                 src={idea.image}
                 alt={`${idea.title} shoe storage idea`}
               />
@@ -190,7 +191,7 @@ export default function ShoeRacksPage() {
       <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"

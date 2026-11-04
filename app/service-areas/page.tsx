@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata, site } from '@/lib/seo'
 
 export const metadata = pageMetadata('/service-areas')
@@ -8,7 +9,7 @@ export default function ServiceAreasPage() {
     <main className="coverage-page">
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Prasad Enterprises home">
-          <img className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Prasad Enterprises" />
+          <SiteImage className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Prasad Enterprises" />
           <span><strong>PRASAD</strong><small>ENTERPRISES</small></span>
         </Link>
         <Link className="header-cta" href="/#contact">Request a quote ↗</Link>

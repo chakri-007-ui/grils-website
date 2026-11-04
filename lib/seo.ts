@@ -4,7 +4,7 @@ export const site = {
   name: 'Prasad Enterprises',
   url: 'https://www.invisiblegrillsinvishakhapatnam.com',
   phone: '+917013378477',
-  maps: 'https://maps.app.goo.gl/AANEyzxQZG1mXv27A',
+  maps: 'https://www.google.com/maps/place/Vizag+Invisible+Grills/data=!4m2!3m1!1s0x0:0xb9c4fc2ddfd36de2',
   address: {
     streetAddress: 'NTR Statue, NTR Marg, Sagar Nagar, Endada',
     addressLocality: 'Visakhapatnam',
@@ -16,15 +16,15 @@ export const site = {
 
 export const pages = {
   '/': {
-    title: 'Invisible Grills & Cloth Hangers in Andhra Pradesh',
+    title: 'Vizag Invisible Grills & Cloth Hangers',
     description: 'Prasad Enterprises installs invisible grills, ceiling cloth hangers and safety nets in Visakhapatnam and across Andhra Pradesh. Call for a site visit and quote.',
   },
   '/invisible-grills': {
-    title: 'Invisible Grills in Visakhapatnam & Andhra Pradesh',
+    title: 'Invisible Grills in Visakhapatnam',
     description: 'Explore stainless-steel invisible grills for balconies, windows and staircases. Prasad Enterprises provides installation across Andhra Pradesh. Request a quote.',
   },
   '/cloth-hangers': {
-    title: 'Ceiling & Wall Cloth Hangers in Andhra Pradesh',
+    title: 'Cloth Hangers in Visakhapatnam',
     description: 'Ceiling-mounted and wall-mounted cloth drying hangers for balconies and utility rooms. Prasad Enterprises provides installation across Andhra Pradesh. Get a quote.',
   },
   '/cricket-nets': {
@@ -42,6 +42,14 @@ export const pages = {
   '/shoe-racks': {
     title: 'Shoe Racks in Visakhapatnam & Andhra Pradesh',
     description: 'Explore shoe rack solutions for home entryways and compact spaces. Contact Prasad Enterprises for sizing and service across Andhra Pradesh.',
+  },
+  '/balcony-safety-nets': {
+    title: 'Balcony Safety Nets in Visakhapatnam',
+    description: 'Balcony safety net installation in Visakhapatnam and Andhra Pradesh by Prasad Enterprises. Discuss materials, measurements and fixing requirements. Request a quote.',
+  },
+  '/pigeon-safety-nets': {
+    title: 'Pigeon Safety Nets in Visakhapatnam',
+    description: 'Pigeon net installation for balconies, utility spaces and open shafts in Visakhapatnam. Contact Prasad Enterprises for a site measurement and quotation.',
   },
   '/service-areas': {
     title: 'Andhra Pradesh Installation Service Areas',

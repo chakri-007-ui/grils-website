@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { ServiceCoverage } from '@/components/service-coverage'
 import { useEffect, useState } from 'react'
 
@@ -203,7 +204,7 @@ export default function Page() {
         <div>VISAKHAPATNAM · ANDHRA PRADESH</div>
 
         <div className="utility-right">
-          <span>30-year warranty</span>
+          <span>Prasad Enterprises</span>
           <span className="utility-dot" />
           <a href="tel:+917013378477">
             +91 70133 78477
@@ -218,7 +219,7 @@ export default function Page() {
           href="#top"
           aria-label="Vizag Invisible Grills home"
         >
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
@@ -315,7 +316,7 @@ export default function Page() {
             aria-hidden="true"
           >
             {heroSlides.map((slide, index) => (
-              <img
+              <SiteImage
                 key={slide.title}
                 className={
                   index === heroIndex
@@ -324,6 +325,9 @@ export default function Page() {
                 }
                 src={slide.image}
                 alt={slide.title}
+                sizes="100vw"
+                loading={index === 0 ? 'eager' : 'lazy'}
+                fetchPriority={index === 0 ? 'high' : 'auto'}
               />
             ))}
           </div>
@@ -540,7 +544,7 @@ export default function Page() {
 
             <div className="reveal-after-pane">
 
-              <img
+              <SiteImage
                 className="reveal-image reveal-after"
                 src="/images/home/before-grill.jpg"
                 alt="Balcony before installation with bulky visible metal bars"
@@ -560,7 +564,7 @@ export default function Page() {
               }}
             >
 
-              <img
+              <SiteImage
                 className="reveal-image"
                 src="/images/home/after-grill.jpg"
                 alt="Balcony after installation with discreet invisible safety cables"
@@ -676,7 +680,7 @@ export default function Page() {
 
           <article className="solution-card image-card">
 
-            <img
+            <SiteImage
               src="/images/image copy.png"
               alt="Safety net and invisible grill installation across a balcony"
             />
@@ -777,7 +781,7 @@ export default function Page() {
 
         <div className="ig-showcase-media cloth-showcase-media">
 
-          <img
+          <SiteImage
             src="/images/cloth-hangers/wall-mount.png"
             alt="Cloth hanger installation in a tidy modern home"
           />
@@ -848,7 +852,7 @@ export default function Page() {
 
         <div className="ig-showcase-media">
 
-          <img
+          <SiteImage
             src="/images/invisible-grills-reference.png"
             alt="Invisible grill installation reference in a modern balcony"
           />
@@ -914,7 +918,7 @@ export default function Page() {
   </div>
 
   <div className="ig-showcase-media">
-    <img
+    <SiteImage
       src="/images/IronGrills.png"
       alt="Iron grill installation for a modern home"
     />
@@ -967,7 +971,7 @@ export default function Page() {
   </div>
 
   <div className="ig-showcase-media shields-showcase-media">
-    <img
+    <SiteImage
       src="/images/Sheid.png"
       alt="Rain protection shields installed over a home balcony and a residential parking area"
     />
@@ -1020,7 +1024,7 @@ export default function Page() {
   </div>
 
   <div className="ig-showcase-media shoe-racks-showcase-media">
-    <img
+    <SiteImage
       src="/images/Shoeracks.png"
       alt="Modern shoe rack providing organised footwear storage in a home"
     />
@@ -1084,7 +1088,7 @@ export default function Page() {
 
         <div className="cricket-video">
 
-          <img
+          <SiteImage
             src="/images/cricket-nets.jpeg"
             alt="Cricket net practice facility"
           />
@@ -1302,7 +1306,7 @@ export default function Page() {
 
                   <div className="project-window-image">
 
-                    <img
+                    <SiteImage
                       src={project.image}
                       alt={project.title}
                     />
@@ -1374,7 +1378,7 @@ export default function Page() {
             ←
           </button>
 
-          <img
+          <SiteImage
             src={projects[selectedProject].image}
             alt={projects[selectedProject].title}
             onClick={(event) =>
@@ -1812,7 +1816,7 @@ export default function Page() {
           className="floating-social"
         >
 
-          <img
+          <SiteImage
             src="/images/home/whatsapp.png"
             alt="WhatsApp"
           />
@@ -1831,7 +1835,7 @@ export default function Page() {
           className="floating-social"
         >
 
-          <img
+          <SiteImage
             src="/images/home/insta.png"
             alt="Instagram"
           />
@@ -1850,7 +1854,7 @@ export default function Page() {
           className="floating-social"
         >
 
-          <img
+          <SiteImage
             src="/images/home/facebook.png"
             alt="Facebook"
           />
@@ -1877,7 +1881,7 @@ export default function Page() {
                 href="#top"
               >
 
-                <img
+                <SiteImage
                   className="brand-mark"
                   src="/images/prasad-enterprises-logo.png"
                   alt="Vizag Invisible Grills"
@@ -1991,9 +1995,10 @@ export default function Page() {
                 Cloth hangers
               </Link>
 
-              <a href="#contact">
+              <Link href="/pigeon-safety-nets">
                 Pigeon safety nets
-              </a>
+              </Link>
+              <Link href="/balcony-safety-nets">Balcony safety nets</Link>
 
             </div>
 
