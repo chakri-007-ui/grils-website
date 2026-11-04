@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
+import { ServiceData } from '@/components/structured-data'
+import { ServiceCoverage } from '@/components/service-coverage'
 
-export const metadata: Metadata = {
-  title: 'Iron Grills | Vizag Invisible Grills',
-  description:
-    'Explore durable and stylish iron grills for balconies, windows and homes in Visakhapatnam.',
-}
+export const metadata = pageMetadata('/Iron-grills')
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>
@@ -32,6 +30,7 @@ const details = [
 export default function IronGrillsPage() {
   return (
     <main className="details-page iron-grills-page">
+      <ServiceData path="/Iron-grills" name="Iron grill installation" />
       {/* HEADER */}
       <header className="site-header">
         <Link
@@ -381,6 +380,7 @@ export default function IronGrillsPage() {
       </section>
 
       {/* FOOTER */}
+      <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
           <img

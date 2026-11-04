@@ -2,12 +2,16 @@ import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { pageMetadata, site } from '@/lib/seo'
+import { BusinessData } from '@/components/structured-data'
 
 export const metadata: Metadata = {
-  title: 'Vizag Invisible Grills | Safety that disappears',
-  description:
-    'Premium invisible grills for balconies, windows and staircases in Visakhapatnam. Preserve your view with discreet, high-tensile safety systems backed by a 10-year warranty.',
-  generator: 'v0.app',
+  ...pageMetadata('/'),
+  metadataBase: new URL(site.url),
+  applicationName: site.name,
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 }
 
 export const viewport: Viewport = {
@@ -21,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className="antialiased">
+        <BusinessData />
         {children}
 
         {process.env.NODE_ENV === 'production' && <Analytics />}

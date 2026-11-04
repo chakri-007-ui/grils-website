@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ServiceCoverage } from '@/components/service-coverage'
 import { useEffect, useState } from 'react'
 
 declare global {
@@ -340,15 +341,15 @@ export default function Page() {
           </div>
 
           <h1>
-            Safety that
+            Invisible grills.
             <br />
-            <em>disappears.</em>
+            <em>Open views.</em>
           </h1>
 
           <p>
-            Invisible grills that protect your home without putting a frame
-            around your view. Designed, installed and supported locally in
-            Visakhapatnam.
+            Prasad Enterprises installs invisible grills, cloth drying hangers
+            and safety nets in Visakhapatnam and across Andhra Pradesh.
+            Share your location for a site visit and quote.
           </p>
 
           <div className="hero-actions">
@@ -1469,6 +1470,8 @@ export default function Page() {
 
       </section>
 
+      <ServiceCoverage />
+
       {/* FAQ */}
       <section className="faq section-pad">
 
@@ -1603,13 +1606,18 @@ export default function Page() {
               formData.get('space') ?? ''
             ).trim()
 
+            const location = String(formData.get('location') ?? '').trim()
+            const pincode = String(formData.get('pincode') ?? '').trim()
+
             const message = [
-              'Hello Vizag Invisible Grills,',
+              'Hello Prasad Enterprises,',
               '',
               'I would like to request a free quote.',
               '',
               `Name: ${name}`,
               `Phone: ${phone}`,
+              `Town / district: ${location || 'Not specified'}`,
+              `PIN code: ${pincode || 'Not specified'}`,
               `What are you protecting?: ${
                 space || 'Not specified'
               }`,
@@ -1719,6 +1727,14 @@ export default function Page() {
               </label>
 
               <label>
+                Town / district in Andhra Pradesh
+                <input name="location" autoComplete="address-level2" placeholder="Your town or village and district" />
+              </label>
+              <label>
+                PIN code
+                <input name="pincode" inputMode="numeric" autoComplete="postal-code" pattern="[1-9][0-9]{5}" maxLength={6} title="Enter a six-digit Indian PIN code" placeholder="Six-digit PIN code" />
+              </label>
+              <label>
 
                 What are you protecting?
 
@@ -1752,6 +1768,10 @@ export default function Page() {
 
                   <option>
                     Cricket net
+                  </option>
+
+                  <option>
+                    Cloth drying hangers
                   </option>
 
                   <option>
@@ -1880,7 +1900,7 @@ export default function Page() {
 
               <p>
                 Premium invisible grills, safety nets and smart protection solutions
-                designed for homes and spaces across Visakhapatnam.
+                installed by Prasad Enterprises across Andhra Pradesh.
               </p>
 
               <a
@@ -1945,6 +1965,8 @@ export default function Page() {
                 Projects
               </a>
 
+              <Link href="/service-areas">Service areas</Link>
+
               <a href="#contact">
                 Contact
               </a>
@@ -1990,7 +2012,7 @@ export default function Page() {
               </span>
 
               <span>
-                Serving homes across Vizag
+                Prasad Enterprises · Serving Andhra Pradesh
               </span>
 
             </div>
@@ -2000,11 +2022,11 @@ export default function Page() {
           <div className="footer-bottom">
 
             <span>
-              © 2026 Vizag Invisible Grills
+              © 2026 Prasad Enterprises
             </span>
 
             <span>
-              30-YEAR WARRANTY · VISAKHAPATNAM
+              SERVING ANDHRA PRADESH
             </span>
 
             <span>
