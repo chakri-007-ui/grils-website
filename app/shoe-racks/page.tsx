@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
+import { ServiceData } from '@/components/structured-data'
+import { ServiceCoverage } from '@/components/service-coverage'
 
-export const metadata: Metadata = {
-  title: 'Shoe Racks | Vizag Invisible Grills',
-  description:
-    'Discover practical, stylish shoe rack solutions for entryways and homes in Visakhapatnam.',
-}
+export const metadata = pageMetadata('/shoe-racks')
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>
@@ -35,6 +33,7 @@ const storageIdeas = [
 export default function ShoeRacksPage() {
   return (
     <main className="details-page shoe-racks-page">
+      <ServiceData path="/shoe-racks" name="Shoe racks" />
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Vizag Invisible Grills home">
           <img
@@ -188,6 +187,7 @@ export default function ShoeRacksPage() {
         </Link>
       </section>
 
+      <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
           <img

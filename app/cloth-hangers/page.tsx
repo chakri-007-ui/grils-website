@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
+import { ServiceData } from '@/components/structured-data'
+import { ServiceCoverage } from '@/components/service-coverage'
 
-export const metadata: Metadata = {
-  title: 'Cloth Hangers | Vizag Invisible Grills',
-  description: 'Smart and space-saving cloth hanger solutions for homes, apartments and service spaces in Visakhapatnam.',
-}
+export const metadata = pageMetadata('/cloth-hangers')
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>
@@ -36,6 +35,7 @@ const mountOptions = [
 export default function ClothHangersPage() {
   return (
     <main className="cloth-hangers-page">
+      <ServiceData path="/cloth-hangers" name="Cloth drying hanger installation" />
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Vizag Invisible Grills home"><img className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Vizag Invisible Grills" /><span><strong>VIZAG</strong><small>INVISIBLE GRILLS</small></span></Link>
         <Link className="header-cta" href="/#contact">Get a free quote <Arrow /></Link>
@@ -45,8 +45,8 @@ export default function ClothHangersPage() {
         <div className="cloth-hero-overlay" />
         <div className="cloth-hero-content">
           <div className="eyebrow light"><span /> CLOTH HANGERS · VIZAG</div>
-          <h1>Smart storage for<br /><em>everyday living.</em></h1>
-          <p>Clean, durable cloth hanger systems that bring order to balconies, wardrobes and service spaces without cluttering the room.</p>
+          <h1>Cloth drying hangers for<br /><em>everyday living.</em></h1>
+          <p>Prasad Enterprises installs ceiling-mounted and wall-mounted cloth drying hangers in Visakhapatnam and across Andhra Pradesh. Choose a system for your balcony or utility area.</p>
           <div className="hero-actions"><Link className="button button-saffron" href="/#contact">Plan your storage <Arrow /></Link><Link className="text-link light-link" href="/">Back to home <Arrow /></Link></div>
         </div>
         <div className="image-caption"><span>Cloth hanger systems</span><span>Organised by design</span></div>
@@ -81,6 +81,7 @@ export default function ClothHangersPage() {
       
 
       <section className="details-cta section-pad scroll-reveal"><div><div className="section-kicker light">READY TO ORGANISE</div><h2>Let’s design<br /><em>your storage.</em></h2><p>Tell us where you want the system installed and we will recommend the most practical and durable hanger layout.</p><Link className="button button-saffron" href="/#contact">Get a free quote <Arrow /></Link></div><Link className="text-link light-link" href="/">Return to Vizag Invisible Grills <Arrow /></Link></section>
+      <ServiceCoverage />
       <div className="site-copyright-bar">© 2026 Vizag Invisible Grills · All rights reserved. Images, designs and website content may not be reproduced without permission.</div>
     
       {/* FLOATING SOCIAL MEDIA BUTTONS */}

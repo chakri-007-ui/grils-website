@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
+import { ServiceData } from '@/components/structured-data'
+import { ServiceCoverage } from '@/components/service-coverage'
 
-export const metadata: Metadata = {
-  title: 'Invisible Grills | Vizag Invisible Grills',
-  description:
-    'Invisible grills for balconies, windows and staircases by Vizag Invisible Grills.',
-}
+export const metadata = pageMetadata('/invisible-grills')
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>
@@ -32,6 +30,7 @@ const details = [
 export default function InvisibleGrillsPage() {
   return (
     <main className="details-page">
+      <ServiceData path="/invisible-grills" name="Invisible grill installation" />
 
       {/* TOP BAR */}
      
@@ -86,15 +85,15 @@ export default function InvisibleGrillsPage() {
           </div>
 
           <h1>
-            Protection that
+            Invisible grills that
             <br />
-            <em>keeps the view.</em>
+            <em>keep the view.</em>
           </h1>
 
           <p>
-            Invisible grills are a quiet layer of safety for balconies,
-            windows and staircases. Strong where it matters, discreet
-            everywhere else.
+            Prasad Enterprises installs invisible grills for balconies,
+            windows and staircases in Visakhapatnam and across Andhra Pradesh.
+            Explore cable options and request a measurement visit.
           </p>
 
           <div className="hero-actions">
@@ -506,6 +505,7 @@ export default function InvisibleGrillsPage() {
         </a>
       </div>
 
+      <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
           <img

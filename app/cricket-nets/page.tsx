@@ -1,10 +1,9 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo'
+import { ServiceData } from '@/components/structured-data'
+import { ServiceCoverage } from '@/components/service-coverage'
 
-export const metadata: Metadata = {
-  title: 'Cricket Nets | Vizag Invisible Grills',
-  description: 'Professional cricket net installations for homes, schools and sports spaces in Visakhapatnam.',
-}
+export const metadata = pageMetadata('/cricket-nets')
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>
@@ -40,6 +39,7 @@ const materialTypes = [
 export default function CricketNetsPage() {
   return (
     <main className="cricket-page">
+      <ServiceData path="/cricket-nets" name="Cricket net installation" />
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Vizag Invisible Grills home"><img className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Vizag Invisible Grills" /><span><strong>VIZAG</strong><small>INVISIBLE GRILLS</small></span></Link>
         <Link className="header-cta" href="/#contact">Get a free quote <Arrow /></Link>
@@ -106,6 +106,7 @@ export default function CricketNetsPage() {
 
 
       <section className="details-cta section-pad scroll-reveal"><div><div className="section-kicker light">READY FOR YOUR NEXT SESSION</div><h2>Let’s build<br /><em>your crease.</em></h2><p>Share the dimensions and intended use of your space. We will recommend the right netting and installation approach.</p><Link className="button button-saffron" href="/#contact">Get a free quote <Arrow /></Link></div><Link className="text-link light-link" href="/">Return to Vizag Invisible Grills <Arrow /></Link></section>
+      <ServiceCoverage />
       <div className="site-copyright-bar">© 2026 Vizag Invisible Grills · All rights reserved. Images, designs and website content may not be reproduced without permission.</div>
     
       {/* FLOATING SOCIAL MEDIA BUTTONS */}
