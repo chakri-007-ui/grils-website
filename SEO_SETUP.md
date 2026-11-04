@@ -27,6 +27,6 @@ There are no fabricated PIN-code lists, hidden location keywords or duplicate pa
 
 - Every public page has its own title, description, canonical URL and social metadata.
 - `/robots.txt` permits crawling and points to `/sitemap.xml`; the sitemap includes the eight public pages.
-- Organization structured data uses existing contact details and the owner-confirmed business name and statewide coverage. No unverified street address, ratings or opening hours are supplied. Service pages have Service and BreadcrumbList data; this does not promise a Google rich result.
+- Local business structured data uses existing contact details, the owner-confirmed name, Andhra Pradesh coverage, supplied Maps link and screenshot-confirmed address: NTR Statue, NTR Marg, Sagar Nagar, Endada, Visakhapatnam, Andhra Pradesh 530045. Ratings and opening hours remain unspecified. Service pages have Service and BreadcrumbList data; this does not promise a Google rich result.
 - Run `npm ci` and `npm run build`. If the local Windows Turbopack CSS worker fails, `npm run build -- --webpack` validates the production site with Next.js's alternate bundler without changing Vercel's build configuration.
 - After building, run `python scripts/check_seo.py` to check the generated HTML, metadata, structured data, sitemap, robots file and service-area links.

@@ -4,6 +4,14 @@ export const site = {
   name: 'Prasad Enterprises',
   url: 'https://www.invisiblegrillsinvishakhapatnam.com',
   phone: '+917013378477',
+  maps: 'https://maps.app.goo.gl/AANEyzxQZG1mXv27A',
+  address: {
+    streetAddress: 'NTR Statue, NTR Marg, Sagar Nagar, Endada',
+    addressLocality: 'Visakhapatnam',
+    addressRegion: 'Andhra Pradesh',
+    postalCode: '530045',
+    addressCountry: 'IN',
+  },
 }
 
 export const pages = {

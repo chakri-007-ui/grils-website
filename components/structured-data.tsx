@@ -7,16 +7,18 @@ export function StructuredData({ data }: { data: Record<string, unknown> }) {
 export function BusinessData() {
   return <StructuredData data={{
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'HomeAndConstructionBusiness',
     '@id': `${site.url}/#business`,
     name: site.name,
     alternateName: 'Vizag Invisible Grills',
     url: site.url,
     logo: `${site.url}/images/prasad-enterprises-logo.png`,
     telephone: site.phone,
+    address: { '@type': 'PostalAddress', ...site.address },
+    hasMap: site.maps,
     areaServed: { '@type': 'State', name: 'Andhra Pradesh', containedInPlace: { '@type': 'Country', name: 'India' } },
     contactPoint: { '@type': 'ContactPoint', telephone: site.phone, contactType: 'customer service', areaServed: 'IN-AP' },
-    sameAs: ['https://maps.app.goo.gl/AANEyzxQZG1mXv27A', 'https://www.instagram.com/prasadorrupula/', 'https://www.facebook.com/profile.php?id=61594490063217'],
+    sameAs: [site.maps, 'https://www.instagram.com/prasadorrupula/', 'https://www.facebook.com/profile.php?id=61594490063217'],
   }} />
 }
 

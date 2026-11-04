@@ -66,7 +66,11 @@ for route in ROUTES:
     assert page.meta.get('og:title') == page.title, route
     assert page.meta.get('twitter:card') == 'summary_large_image', route
     assert page.h1s == 1, (route, 'h1 count', page.h1s)
-    assert any(s.get('@type') == 'Organization' and s['name'] == 'Prasad Enterprises' for s in page.schemas), route
+    business = next(s for s in page.schemas if s.get('@type') == 'HomeAndConstructionBusiness')
+    assert business['name'] == 'Prasad Enterprises', route
+    assert business['address']['postalCode'] == '530045', route
+    assert business['address']['streetAddress'] == 'NTR Statue, NTR Marg, Sagar Nagar, Endada', route
+    assert business['hasMap'] == 'https://maps.app.goo.gl/AANEyzxQZG1mXv27A', route
     if route not in ('/', '/service-areas'):
         graph = next(s['@graph'] for s in page.schemas if '@graph' in s)
         assert {s['@type'] for s in graph} == {'Service', 'BreadcrumbList'}, route
