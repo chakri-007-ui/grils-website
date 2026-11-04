@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   ...pageMetadata('/'),
   metadataBase: new URL(site.url),
   applicationName: site.name,
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || 'UgVwuOnVnFcXAXJohNBa6HkqsZ5lI1pg1pBK9S4iou8',
+  },
 }
 
 export const viewport: Viewport = {
