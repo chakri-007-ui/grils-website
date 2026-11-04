@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { InstallationGuide } from '@/components/installation-guide'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata } from '@/lib/seo'
 import { ServiceData } from '@/components/structured-data'
 import { ServiceCoverage } from '@/components/service-coverage'
@@ -42,7 +44,7 @@ export default function InvisibleGrillsPage() {
           href="/"
           aria-label="Vizag Invisible Grills home"
         >
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
@@ -143,7 +145,7 @@ export default function InvisibleGrillsPage() {
           <div className="ig-editorial-media">
             <span className="wire-number">01</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/wire-2-5mm.png"
               alt="2.5 mm invisible grill wire"
             />
@@ -239,7 +241,7 @@ export default function InvisibleGrillsPage() {
           <div className="ig-editorial-media">
             <span className="wire-number">02</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/wire-3mm.png"
               alt="3 mm invisible grill wire"
             />
@@ -255,7 +257,7 @@ export default function InvisibleGrillsPage() {
           <div className="ig-editorial-media">
             <span className="wire-number">03</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/wire-2mm.png"
               alt="2 mm invisible grill wire"
             />
@@ -334,7 +336,7 @@ export default function InvisibleGrillsPage() {
       {/* FEATURE */}
       <section className="feature-split section-pad scroll-reveal">
         <div className="feature-split-image">
-          <img
+          <SiteImage
             src="/images/invisible-grills/feature-finish.jpg"
             alt="Invisible grill system with slim protective cables and open balcony"
           />
@@ -403,7 +405,7 @@ export default function InvisibleGrillsPage() {
           <div>
             <span>01</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/use-balcony.png"
               alt="Invisible grills installed across a balcony"
             />
@@ -419,7 +421,7 @@ export default function InvisibleGrillsPage() {
           <div>
             <span>02</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/use-window.png"
               alt="Invisible grills installed across an open passage"
             />
@@ -435,7 +437,7 @@ export default function InvisibleGrillsPage() {
           <div>
             <span>03</span>
 
-            <img
+            <SiteImage
               src="/images/invisible-grills/use-staircase.png"
               alt="Invisible grill system detail"
             />
@@ -492,23 +494,24 @@ export default function InvisibleGrillsPage() {
       {/* FLOATING SOCIAL MEDIA BUTTONS */}
       <div className="floating-socials" aria-label="Social media links">
         <a href="https://wa.me/917013378477" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" className="floating-social">
-          <img src="/images/home/whatsapp.png" alt="WhatsApp" />
+          <SiteImage src="/images/home/whatsapp.png" alt="WhatsApp" />
           <span className="floating-tooltip">WhatsApp</span>
         </a>
         <a href="https://www.instagram.com/prasadorrupula?stkn=aWcyN2U0NTY5Ymc1" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="floating-social">
-          <img src="/images/home/insta.png" alt="Instagram" />
+          <SiteImage src="/images/home/insta.png" alt="Instagram" />
           <span className="floating-tooltip">Instagram</span>
         </a>
         <a href="https://www.facebook.com/profile.php?id=61594490063217&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="floating-social">
-          <img src="/images/home/facebook.png" alt="Facebook" />
+          <SiteImage src="/images/home/facebook.png" alt="Facebook" />
           <span className="floating-tooltip">Facebook</span>
         </a>
       </div>
 
+      <InstallationGuide kind="grills" />
       <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"

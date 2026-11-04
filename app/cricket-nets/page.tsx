@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata } from '@/lib/seo'
 import { ServiceData } from '@/components/structured-data'
 import { ServiceCoverage } from '@/components/service-coverage'
@@ -41,7 +42,7 @@ export default function CricketNetsPage() {
     <main className="cricket-page">
       <ServiceData path="/cricket-nets" name="Cricket net installation" />
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Vizag Invisible Grills home"><img className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Vizag Invisible Grills" /><span><strong>VIZAG</strong><small>INVISIBLE GRILLS</small></span></Link>
+        <Link className="brand" href="/" aria-label="Vizag Invisible Grills home"><SiteImage className="brand-mark" src="/images/prasad-enterprises-logo.png" alt="Vizag Invisible Grills" /><span><strong>VIZAG</strong><small>INVISIBLE GRILLS</small></span></Link>
         <Link className="header-cta" href="/#contact">Get a free quote <Arrow /></Link>
       </header>
 
@@ -75,7 +76,7 @@ export default function CricketNetsPage() {
         <div className="cricket-type-grid">
           {netTypes.map((item) => (
             <article key={item.number} className="cricket-type-card scroll-reveal">
-              <img src={item.image} alt={item.name} />
+              <SiteImage src={item.image} alt={item.name} />
               <div className="cricket-type-copy">
                 <span>{item.number}</span>
                 <h3>{item.name}</h3>
@@ -94,7 +95,7 @@ export default function CricketNetsPage() {
         <div className="cricket-material-grid">
           {materialTypes.map((item) => (
             <article key={item.title} className="cricket-material-card scroll-reveal">
-              <img src={item.image} alt={item.title} />
+              <SiteImage src={item.image} alt={item.title} />
               <div className="cricket-material-copy">
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
@@ -112,15 +113,15 @@ export default function CricketNetsPage() {
       {/* FLOATING SOCIAL MEDIA BUTTONS */}
       <div className="floating-socials" aria-label="Social media links">
         <a href="https://wa.me/917013378477" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" className="floating-social">
-          <img src="/images/home/whatsapp.png" alt="WhatsApp" />
+          <SiteImage src="/images/home/whatsapp.png" alt="WhatsApp" />
           <span className="floating-tooltip">WhatsApp</span>
         </a>
         <a href="https://www.instagram.com/prasadorrupula?stkn=aWcyN2U0NTY5Ymc1" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" className="floating-social">
-          <img src="/images/home/insta.png" alt="Instagram" />
+          <SiteImage src="/images/home/insta.png" alt="Instagram" />
           <span className="floating-tooltip">Instagram</span>
         </a>
         <a href="https://www.facebook.com/profile.php?id=61594490063217&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" className="floating-social">
-          <img src="/images/home/facebook.png" alt="Facebook" />
+          <SiteImage src="/images/home/facebook.png" alt="Facebook" />
           <span className="floating-tooltip">Facebook</span>
         </a>
       </div>

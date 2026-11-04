@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SiteImage } from '@/components/site-image'
 import { pageMetadata } from '@/lib/seo'
 import { ServiceData } from '@/components/structured-data'
 import { ServiceCoverage } from '@/components/service-coverage'
@@ -39,7 +40,7 @@ export default function ShieldsPage() {
       <ServiceData path="/shields" name="Rain protection shields" />
       <header className="site-header">
         <Link className="brand" href="/" aria-label="Vizag Invisible Grills home">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
@@ -114,7 +115,7 @@ export default function ShieldsPage() {
 
       <section className="feature-split section-pad scroll-reveal">
         <div className="feature-split-image">
-          <img
+          <SiteImage
             src="/images/Balcony.png"
             alt="Covered residential balcony with a modern rain shield"
           />
@@ -161,7 +162,7 @@ export default function ShieldsPage() {
           {applications.map((application) => (
             <div key={application.number}>
               <span>{application.number}</span>
-              <img
+              <SiteImage
                 src={application.image}
                 alt={application.alt}
               />
@@ -196,7 +197,7 @@ export default function ShieldsPage() {
       <ServiceCoverage />
       <footer className="details-footer">
         <Link className="brand" href="/">
-          <img
+          <SiteImage
             className="brand-mark"
             src="/images/prasad-enterprises-logo.png"
             alt="Vizag Invisible Grills"
