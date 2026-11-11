@@ -14,6 +14,10 @@ export const site = {
   },
 }
 
+const { streetAddress, addressLocality, addressRegion, postalCode } = site.address
+export const businessAddress = `${streetAddress}, ${addressLocality}, ${addressRegion} ${postalCode}`
+export const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(businessAddress)}`
+
 export const pages = {
   '/': {
     title: 'Vizag Invisible Grills & Cloth Hangers',
