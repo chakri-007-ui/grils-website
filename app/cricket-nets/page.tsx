@@ -50,7 +50,7 @@ export default function CricketNetsPage() {
         <div className="cricket-hero-overlay" />
         <div className="cricket-hero-content">
           <div className="eyebrow light"><span /> CRICKET NETS · VIZAG</div>
-          <h1>Make room for<br /><em>the next shot.</em></h1>
+          <h1>Cricket net installation<br /><em>in Visakhapatnam.</em></h1>
           <p>Professional cricket nets that turn open terraces, school grounds and training spaces into safer, sharper places to play.</p>
           <div className="hero-actions"><Link className="button button-saffron" href="/#contact">Plan your net <Arrow /></Link><Link className="text-link light-link" href="/">Back to home <Arrow /></Link></div>
         </div>

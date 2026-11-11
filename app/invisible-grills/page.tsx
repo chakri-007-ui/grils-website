@@ -87,9 +87,9 @@ export default function InvisibleGrillsPage() {
           </div>
 
           <h1>
-            Invisible grills that
+            Invisible grills
             <br />
-            <em>keep the view.</em>
+            <em>in Visakhapatnam.</em>
           </h1>
 
           <p>

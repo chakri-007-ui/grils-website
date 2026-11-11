@@ -78,9 +78,9 @@ export default function IronGrillsPage() {
           </div>
 
           <h1>
-            Strong protection
+            Iron grills
             <br />
-            <em>timeless design.</em>
+            <em>in Visakhapatnam.</em>
           </h1>
 
           <p>

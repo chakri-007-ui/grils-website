@@ -71,9 +71,9 @@ export default function ShieldsPage() {
           </div>
           <div className="details-hero-index">04 / HOME &amp; OUTDOOR</div>
           <h1>
-            Cover your space.
+            Rain protection shields
             <br />
-            <em>Keep your style.</em>
+            <em>in Visakhapatnam.</em>
           </h1>
           <p>
             Rain protection shields thoughtfully planned for balconies,

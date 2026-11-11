@@ -24,11 +24,11 @@ export const pages = {
     description: 'Explore stainless-steel invisible grills for balconies, windows and staircases. Prasad Enterprises provides installation across Andhra Pradesh. Request a quote.',
   },
   '/cloth-hangers': {
-    title: 'Cloth Hangers in Visakhapatnam',
+    title: 'Cloth Drying Hangers in Visakhapatnam',
     description: 'Ceiling-mounted and wall-mounted cloth drying hangers for balconies and utility rooms. Prasad Enterprises provides installation across Andhra Pradesh. Get a quote.',
   },
   '/cricket-nets': {
-    title: 'Cricket Nets Installation in Andhra Pradesh',
+    title: 'Cricket Net Installation in Visakhapatnam',
     description: 'Cricket practice nets and enclosures for homes, schools and sports spaces. Contact Prasad Enterprises for installation in Visakhapatnam and across Andhra Pradesh.',
   },
   '/Iron-grills': {
@@ -36,7 +36,7 @@ export const pages = {
     description: 'Explore iron grills for windows, balconies and homes. Contact Prasad Enterprises for measurements and installation across Andhra Pradesh.',
   },
   '/shields': {
-    title: 'Rain Protection Shields in Andhra Pradesh',
+    title: 'Rain Protection Shields in Visakhapatnam',
     description: 'Rain protection shields for balconies, parking areas and outdoor spaces. Ask Prasad Enterprises about measurements and installation across Andhra Pradesh.',
   },
   '/shoe-racks': {
