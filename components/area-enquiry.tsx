@@ -2,7 +2,11 @@
 
 import type { FormEvent } from 'react'
 
-import { serviceAreaGroups } from '@/lib/seo'
+const cities = [
+  'Visakhapatnam', 'Vizianagaram', 'Srikakulam', 'Anakapalle',
+  'Kakinada', 'Rajamahendravaram', 'Eluru', 'Vijayawada',
+  'Guntur', 'Ongole', 'Nellore', 'Tirupati', 'Kadapa', 'Kurnool', 'Anantapur',
+]
 
 export function AreaEnquiry({ phone }: { phone: string }) {
   function openWhatsApp(event: FormEvent<HTMLFormElement>) {
@@ -33,7 +37,7 @@ export function AreaEnquiry({ phone }: { phone: string }) {
       <label htmlFor="coverage-town">Town or village</label>
       <input id="coverage-town" name="town" list="coverage-cities" autoComplete="address-level2" required maxLength={100} pattern={'.*\\S.*'} />
       <datalist id="coverage-cities">
-        {serviceAreaGroups.flatMap(({ towns }) => towns).map(town => <option key={town} value={town} />)}
+        {cities.map(city => <option key={city} value={city} />)}
       </datalist>
       <label htmlFor="coverage-pin">Six-digit PIN code</label>
       <input id="coverage-pin" name="pin" inputMode="numeric" autoComplete="postal-code" required pattern="[1-9][0-9]{5}" maxLength={6} />

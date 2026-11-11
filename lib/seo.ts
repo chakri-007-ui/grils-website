@@ -19,20 +19,6 @@ export const businessAddress = `${streetAddress}, ${addressLocality}, ${addressR
 // Use the pin for this address so Maps does not substitute a nearby landmark.
 export const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=17.7668295%2C83.3577749'
 
-export const serviceAreaGroups = [
-  {
-    label: 'In and around Visakhapatnam',
-    towns: ['Visakhapatnam', 'Gajuwaka', 'Pendurthi', 'Madhurawada', 'Gopalapatnam', 'Simhachalam', 'Bheemunipatnam', 'Anakapalle'],
-  },
-  {
-    label: 'Across Andhra Pradesh',
-    towns: [
-      'Vizianagaram', 'Srikakulam', 'Kakinada', 'Rajamahendravaram', 'Eluru',
-      'Vijayawada', 'Guntur', 'Ongole', 'Nellore', 'Tirupati', 'Kadapa', 'Kurnool', 'Anantapur',
-    ],
-  },
-]
-
 export const pages = {
   '/': {
     title: 'Vizag Invisible Grills & Cloth Hangers',

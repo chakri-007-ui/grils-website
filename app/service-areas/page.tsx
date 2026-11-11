@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { AreaEnquiry } from '@/components/area-enquiry'
 import { SiteImage } from '@/components/site-image'
-import { businessAddress, directionsUrl, pageMetadata, serviceAreaGroups, site } from '@/lib/seo'
+import { businessAddress, directionsUrl, pageMetadata, site } from '@/lib/seo'
 
 export const metadata = pageMetadata('/service-areas')
 
@@ -40,13 +40,6 @@ export default function ServiceAreasPage() {
           <article><h2>Shoe racks</h2><p>Share the available width, depth and storage needs to find a rack for your entrance or utility space.</p><Link className="text-link" href="/shoe-racks">Explore shoe racks ↗</Link></article>
           <article><h2>Safety and cricket nets</h2><p>Tell us about the area you want enclosed, its dimensions and intended use. We can discuss netting and fitting requirements before arranging a visit.</p><Link className="text-link" href="/cricket-nets">Explore cricket net installation ↗</Link></article>
         </div>
-        <section aria-labelledby="service-towns-title">
-          <h2 id="service-towns-title">Towns and neighbourhoods we serve</h2>
-          {serviceAreaGroups.map(({ label, towns }) => (
-            <p key={label}><strong>{label}</strong> — {towns.join(', ')}.</p>
-          ))}
-          <p>Enter your own town or village and PIN code to check availability if it isn’t listed.</p>
-        </section>
         <h2>How to arrange service for your PIN code</h2>
         <ol className="coverage-steps">
           <li>Send your town or village, district and six-digit PIN code, along with the service you need.</li>
