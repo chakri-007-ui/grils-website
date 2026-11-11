@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { AreaEnquiry } from '@/components/area-enquiry'
 import { SiteImage } from '@/components/site-image'
-import { pageMetadata, site } from '@/lib/seo'
+import { businessAddress, directionsUrl, pageMetadata, site } from '@/lib/seo'
 
 export const metadata = pageMetadata('/service-areas')
 
@@ -24,7 +24,11 @@ export default function ServiceAreasPage() {
           <div>
             <h2 id="area-location-title">Check service for your location</h2>
             <p>Choose a service and enter your town or village and PIN code. We’ll confirm availability, visit timing and any travel charges on WhatsApp.</p>
-            <a className="text-link" href={site.maps} target="_blank" rel="noopener noreferrer">Open our Visakhapatnam listing on Google Maps ↗</a>
+            <p><strong>Our location:</strong> {businessAddress}.</p>
+            <div className="hero-actions">
+              <a className="button button-saffron" href={directionsUrl} target="_blank" rel="noopener noreferrer">Get directions ↗</a>
+              <a className="text-link" href={site.maps} target="_blank" rel="noopener noreferrer">View our Google Maps listing ↗</a>
+            </div>
           </div>
           <AreaEnquiry phone={site.phone} />
         </section>
