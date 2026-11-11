@@ -6276,3 +6276,27 @@ section.scroll-reveal,
 .net-related { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 3rem; }
 .net-related a { text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 760px) { .installation-guide-grid { grid-template-columns: 1fr; } }
+
+.area-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  margin: 3rem 0;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: var(--paper-2);
+}
+.area-location h2 { margin-top: 0; }
+.area-location p { line-height: 1.7; margin-bottom: 1.5rem; }
+.area-enquiry { display: grid; align-content: start; gap: .6rem; min-width: 0; }
+.area-enquiry label { font-weight: 600; }
+.area-enquiry input, .area-enquiry select {
+  width: 100%;
+  margin-bottom: .6rem;
+  padding: .75rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font: inherit;
+}
+.area-enquiry .button { justify-self: start; }
+@media (max-width: 760px) { .area-location { grid-template-columns: 1fr; } }

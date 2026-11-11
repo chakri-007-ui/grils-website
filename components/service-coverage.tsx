@@ -16,7 +16,7 @@ export function ServiceCoverage() {
         <Link href="/cloth-hangers">Explore cloth drying hangers ↗</Link>
         <Link href="/balcony-safety-nets">Explore balcony safety nets ↗</Link>
         <Link href="/pigeon-safety-nets">Explore pigeon safety nets ↗</Link>
-        <Link href="/service-areas">Check service coverage ↗</Link>
+        <Link href="/service-areas">Check your town and PIN code ↗</Link>
         <a href={site.maps} target="_blank" rel="noopener noreferrer">Find Prasad Enterprises on Google Maps ↗</a>
         <a href="https://wa.me/917013378477?text=Hello%20Prasad%20Enterprises%2C%20I%20would%20like%20installation%20in%20Andhra%20Pradesh.%20My%20town%20and%20PIN%20code%20are%3A%20">Send your location on WhatsApp ↗</a>
       </div>

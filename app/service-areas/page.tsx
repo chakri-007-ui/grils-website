@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AreaEnquiry } from '@/components/area-enquiry'
 import { SiteImage } from '@/components/site-image'
 import { pageMetadata, site } from '@/lib/seo'
 
@@ -17,11 +18,21 @@ export default function ServiceAreasPage() {
       <section className="coverage-intro section-pad">
         <nav className="coverage-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link> / <span aria-current="page">Service areas</span></nav>
         <div className="section-kicker">PRASAD ENTERPRISES</div>
-        <h1>Invisible grills and cloth hanger installation across Andhra Pradesh</h1>
-        <p>Our Visakhapatnam-based team serves homes and other spaces throughout Andhra Pradesh. Contact us with your location to arrange measurements and discuss installation.</p>
+        <h1>Installation service areas in Andhra Pradesh</h1>
+        <p>Our Visakhapatnam team serves homes and businesses across Andhra Pradesh. Ask about invisible grills, cloth hangers, iron grills, shoe racks and cricket nets in your town.</p>
+        <section className="area-location" aria-labelledby="area-location-title">
+          <div>
+            <h2 id="area-location-title">Check service for your location</h2>
+            <p>Choose a service and enter your town or village and PIN code. We’ll confirm availability, visit timing and any travel charges on WhatsApp.</p>
+            <a className="text-link" href={site.maps} target="_blank" rel="noopener noreferrer">Open our Visakhapatnam listing on Google Maps ↗</a>
+          </div>
+          <AreaEnquiry phone={site.phone} />
+        </section>
         <div className="coverage-service-grid">
           <article><h2>Invisible grills</h2><p>Discuss stainless-steel cable options for your balcony, windows or staircase. Send opening dimensions and photos so we can recommend a layout and prepare an estimate.</p><Link className="text-link" href="/invisible-grills">View cable systems ↗</Link></article>
           <article><h2>Cloth drying hangers</h2><p>Choose a ceiling-mounted or wall-mounted drying system for a balcony or utility area. Share the available width, ceiling height and mounting surface to discuss a suitable size.</p><Link className="text-link" href="/cloth-hangers">View hanger options and sizes ↗</Link></article>
+          <article><h2>Iron grills</h2><p>Send photos and measurements of your window or balcony to discuss a grill design and fitting.</p><Link className="text-link" href="/Iron-grills">View iron grill options ↗</Link></article>
+          <article><h2>Shoe racks</h2><p>Share the available width, depth and storage needs to find a rack for your entrance or utility space.</p><Link className="text-link" href="/shoe-racks">Explore shoe racks ↗</Link></article>
           <article><h2>Safety and cricket nets</h2><p>Tell us about the area you want enclosed, its dimensions and intended use. We can discuss netting and fitting requirements before arranging a visit.</p><Link className="text-link" href="/cricket-nets">Explore netting options ↗</Link></article>
         </div>
         <h2>How to arrange service for your PIN code</h2>
