@@ -32,8 +32,9 @@ export default function ServiceAreasPage() {
           <article><h2>Invisible grills</h2><p>Discuss stainless-steel cable options for your balcony, windows or staircase. Send opening dimensions and photos so we can recommend a layout and prepare an estimate.</p><Link className="text-link" href="/invisible-grills">View cable systems ↗</Link></article>
           <article><h2>Cloth drying hangers</h2><p>Choose a ceiling-mounted or wall-mounted drying system for a balcony or utility area. Share the available width, ceiling height and mounting surface to discuss a suitable size.</p><Link className="text-link" href="/cloth-hangers">View hanger options and sizes ↗</Link></article>
           <article><h2>Iron grills</h2><p>Send photos and measurements of your window or balcony to discuss a grill design and fitting.</p><Link className="text-link" href="/Iron-grills">View iron grill options ↗</Link></article>
+          <article><h2>Rain protection shields</h2><p>Ask about rain covers for balconies and parking areas. Send photos and dimensions so we can discuss how the shield would fit your space.</p><Link className="text-link" href="/shields">Explore rain protection shields ↗</Link></article>
           <article><h2>Shoe racks</h2><p>Share the available width, depth and storage needs to find a rack for your entrance or utility space.</p><Link className="text-link" href="/shoe-racks">Explore shoe racks ↗</Link></article>
-          <article><h2>Safety and cricket nets</h2><p>Tell us about the area you want enclosed, its dimensions and intended use. We can discuss netting and fitting requirements before arranging a visit.</p><Link className="text-link" href="/cricket-nets">Explore netting options ↗</Link></article>
+          <article><h2>Safety and cricket nets</h2><p>Tell us about the area you want enclosed, its dimensions and intended use. We can discuss netting and fitting requirements before arranging a visit.</p><Link className="text-link" href="/cricket-nets">Explore cricket net installation ↗</Link></article>
         </div>
         <h2>How to arrange service for your PIN code</h2>
         <ol className="coverage-steps">
