@@ -16,7 +16,8 @@ export const site = {
 
 const { streetAddress, addressLocality, addressRegion, postalCode } = site.address
 export const businessAddress = `${streetAddress}, ${addressLocality}, ${addressRegion} ${postalCode}`
-export const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(businessAddress)}`
+// Use the pin for this address so Maps does not substitute a nearby landmark.
+export const directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=17.7668295%2C83.3577749'
 
 export const pages = {
   '/': {
