@@ -47,7 +47,7 @@ export default function ClothHangersPage() {
         <div className="cloth-hero-overlay" />
         <div className="cloth-hero-content">
           <div className="eyebrow light"><span /> CLOTH HANGERS · VIZAG</div>
-          <h1>Cloth drying hangers for<br /><em>everyday living.</em></h1>
+          <h1>Cloth drying hangers<br /><em>in Visakhapatnam.</em></h1>
           <p>Prasad Enterprises installs ceiling-mounted and wall-mounted cloth drying hangers in Visakhapatnam and across Andhra Pradesh. Choose a system for your balcony or utility area.</p>
           <div className="hero-actions"><Link className="button button-saffron" href="/#contact">Plan your storage <Arrow /></Link><Link className="text-link light-link" href="/">Back to home <Arrow /></Link></div>
         </div>
