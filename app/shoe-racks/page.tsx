@@ -68,9 +68,9 @@ export default function ShoeRacksPage() {
           </div>
           <div className="details-hero-index">05 / EVERYDAY ORGANISATION</div>
           <h1>
-            A place for every pair.
+            Shoe racks
             <br />
-            <em>A calmer entryway.</em>
+            <em>in Visakhapatnam.</em>
           </h1>
           <p>
             Practical shoe racks designed to bring order to entryways and
